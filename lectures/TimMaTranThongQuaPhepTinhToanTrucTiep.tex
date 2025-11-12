@@ -1,0 +1,345 @@
+\section{Tìm ma trận thông qua phép tính toán trực tiếp}\label{chap1_2}
+
+\vidu \textbf{1.} Tìm tất cả các ma trận $\ds \bm{A \,\,=}$
+\(
+\begin{bmatrix}
+	\bm{a} & \bm{b} \\
+	\bm{c} & \bm{d}
+\end{bmatrix}
+\)
+, sao cho $\ds \bm{A^n \,\,=}$
+\(
+\begin{bmatrix}
+	\bm{a^n} & \bm{b^n} \\
+	\bm{c^n} & \bm{d^n}
+\end{bmatrix}
+\)
+, với mọi số nguyên dương $\ds \bm{n}$. (Đề DTQG năm 2009)
+
+\begin{itemize}
+	\item Trước hết ta nhận thấy ma trận không $\ds \bm{O \,\,=}$
+	\(
+	\begin{bmatrix}
+		\bm{0} & \bm{0} \\
+		\bm{0} & \bm{0}
+	\end{bmatrix}
+	\)
+	là một ma trận cần tìm.
+	\item Từ đẳng thức $\ds \bm{A^2 \,\,=}$
+	\(
+	\begin{bmatrix}
+		\bm{a} & \bm{b} \\
+		\bm{c} & \bm{d}
+	\end{bmatrix}
+	\)
+	\(
+	\begin{bmatrix}
+		\bm{a} & \bm{b} \\
+		\bm{c} & \bm{d}
+	\end{bmatrix}
+	\)
+	=
+	\(
+	\begin{bmatrix}
+		\bm{a^2 \,\,+\,\, bc} & \bm{b \left( a \,\,+\,\, d \right)} \\
+		\bm{c \left( a \,\,+\,\, d \right)} & \bm{bc \,\,+\,\, d^2}
+	\end{bmatrix}
+	\)
+	=
+	\(
+	\begin{bmatrix}
+		\bm{a^2} & \bm{b^2} \\
+		\bm{c^2} & \bm{d^2}
+	\end{bmatrix}
+	\)
+	, ta có
+	\item 
+	\(
+	\begin{cases}
+		\bm{a^2 \,\,+\,\, bc \,\,=\,\, a^2} \\
+		\bm{b \left( a \,\,+\,\, d \right) \,\,=\,\, b^2} \\
+		\bm{c \left( a \,\,+\,\, d \right) \,\,=\,\, c^2} \\
+		\bm{bc \,\,+\,\, d^2 \,\,=\,\, d^2}
+	\end{cases}
+	\)
+	$\Rightarrow$
+	\(
+	\begin{cases}
+		\bm{bc \,\,=\,\, 0} \quad (1) \\
+		\bm{b \left( a \,\,+\,\, d \,\,-\,\, b \right) \,\,=\,\, 0} \quad (2) \\
+		\bm{c \left( a \,\,+\,\, d \,\,-\,\, c \right) \,\,=\,\, 0} \quad (3)
+	\end{cases}
+	\)
+\end{itemize}
+
+\begin{itemize}
+	\item \truonghop \textbf{1.} Nếu $\ds \bm{c} \neq \bm{0}$, thì từ hệ trên ta có
+	\[
+	\begin{cases}
+		\bm{b \,\,=\,\, 0} \\
+		\bm{a \,\,+\,\, d \,\,-\,\, c \,\,=\,\, 0} \quad (4)
+	\end{cases}
+	\]
+	Từ đẳng thức $\ds \bm{A^3 \,\,=}$
+	\(
+	\begin{bmatrix}
+		\bm{a^3} & \bm{0} \\
+		\bm{c^3} & \bm{d^3}
+	\end{bmatrix}
+	\)
+	=
+	$\ds \bm{A^2 \cdot A \,\,=}$
+	\(
+	\begin{bmatrix}
+		\bm{a^2} & \bm{0} \\
+		\bm{c \left( a \,\,+\,\, d \right)} & \bm{d^2}
+	\end{bmatrix}
+	\)
+	\(
+	\begin{bmatrix}
+		\bm{a} & \bm{0} \\
+		\bm{c} & \bm{d}
+	\end{bmatrix}
+	\)
+	=
+	\(
+	\begin{bmatrix}
+		\bm{a^3} & \bm{0} \\
+		\bm{ac \left( a \,\,+\,\, d \right) \,\,+\,\, d^2c} & \bm{d^3}
+	\end{bmatrix}.
+	\)
+	Từ đó ta có $\ds \bm{c^3 \,\,=\,\, ac \left( a \,\,+\,\, d \right) \,\,+\,\, cd^2} \Rightarrow \bm{c^2 \,\,=\,\, a^2 \,\,+\,\, ad \,\,+\,\, d^2}$. Từ $\ds \bm{(4)}$ ta có $\ds \bm{c \,\,=\,\, a \,\,+\,\, d}$, thay vào phương trình này ta có $\ds \bm{\left( a \,\,+\,\, d \right)^2 \,\,=\,\, a^2 \,\,+\,\, ad \,\,+\,\, d^2} \Rightarrow \bm{ad \,\,=\,\, 0}$
+	\begin{itemize}
+		\item Nếu $\ds \bm{a \,\,=\,\, 0}$, thì từ phương trình $\ds \bm{(4)}$ ta có
+		\(
+		\begin{cases}
+			\bm{b \,\,=\,\, a \,\,=\,\, 0} \\
+			\bm{d \,\,=\,\, c} \neq \bm{0}
+		\end{cases}
+		\)
+		Vậy ma trận $\ds \bm{A \,\,=}$
+		\(
+		\begin{bmatrix}
+			\bm{0} & \bm{0} \\
+			\bm{c} & \bm{c}
+		\end{bmatrix}
+		\)
+		, $\ds \bm{c} \neq \bm{0}$.
+		\item Nếu $\ds \bm{d \,\,=\,\, 0}$, thì từ phương trình $\ds \bm{(4)}$ ta có
+		\(
+		\begin{cases}
+			\bm{b \,\,=\,\, d \,\,=\,\, 0} \\
+			\bm{a \,\,=\,\, c} \neq \bm{0}
+		\end{cases}
+		\)
+		Vậy ma trận $\ds \bm{A \,\,=}$
+		\(
+		\begin{bmatrix}
+			\bm{c} & \bm{0} \\
+			\bm{c} & \bm{0}
+		\end{bmatrix}
+		\)
+		, $\ds \bm{c} \neq \bm{0}$.
+	\end{itemize}
+	\item \truonghop \textbf{2.} Nếu $\ds \bm{b} \neq \bm{0}$, thì lý luận tương tự như trên ta có
+	\[
+	A =
+	\begin{bmatrix}
+		\bm{0} & \bm{b} \\
+		\bm{0} & \bm{b}
+	\end{bmatrix}
+	, \quad \bm{b} \neq \bm{0} \quad \text{hoặc} \quad A = 
+	\begin{bmatrix}
+		\bm{b} & \bm{b} \\
+		\bm{0} & \bm{0}
+	\end{bmatrix}
+	\quad \bm{b} \neq \bm{0}.
+	\]
+	\item \truonghop \textbf{3.} Nếu $\ds \bm{b \,\,=\,\, c \,\,=\,\, 0}$, thì $\ds \bm{A \,\,=}$
+	\(
+	\begin{bmatrix}
+		\bm{a} & \bm{0} \\
+		\bm{0} & \bm{d}
+	\end{bmatrix}
+	\).
+	Thử lại thấy cả 5 trường hợp trên đều thỏa mãn. Vậy các ma trận cần tìm là
+	\[
+	A =
+	\begin{bmatrix}
+		\bm{0} & \bm{0} \\
+		\bm{a} & \bm{a}
+	\end{bmatrix}
+	,
+	A =
+	\begin{bmatrix}
+		\bm{b} & \bm{0} \\
+		\bm{b} & \bm{0}
+	\end{bmatrix}
+	,
+	A =
+	\begin{bmatrix}
+		\bm{0} & \bm{c} \\
+		\bm{0} & \bm{c}
+	\end{bmatrix}
+	,
+	A =
+	\begin{bmatrix}
+		\bm{d} & \bm{d} \\
+		\bm{0} & \bm{0}
+	\end{bmatrix}
+	,
+	A =
+	\begin{bmatrix}
+		\bm{e} & \bm{0} \\
+		\bm{0} & \bm{f}
+	\end{bmatrix}
+	, \text{với} \quad \bm{a}, \cdots, \bm{f} \in \bm{\mathbb{R}}.
+	\]
+\end{itemize}
+
+\subsection{Bài tập}\label{chap1_2_1}
+
+\noindent
+
+\baitap \textbf{1.} Tìm các ma trận thực, vuông cấp hai $\ds \bm{A}$ sao cho $\ds \bm{A^2 \,\,=\,\, I}$. (Đề thi QG - 1993)
+
+\hdg
+
+\begin{itemize}
+	\item Đặt $\ds \bm{A \,\,=}$
+	\(
+	\begin{bmatrix}
+		\bm{a} & \bm{b} \\
+		\bm{c} & \bm{d}
+	\end{bmatrix}
+	\)
+	\item Ta có $\ds \bm{A^2 \,\,=}$
+	\(
+	\begin{bmatrix}
+		\bm{a} & \bm{b} \\
+		\bm{c} & \bm{d}
+	\end{bmatrix}
+	\)
+	\(
+	\begin{bmatrix}
+		\bm{a} & \bm{b} \\
+		\bm{c} & \bm{d}
+	\end{bmatrix}
+	\)
+	=
+	\(
+	\begin{bmatrix}
+		\bm{a^2 \,\,+\,\, bc} & \bm{b \left( a \,\,+\,\, d \right)} \\
+		\bm{c \left( a \,\,+\,\, d \right)} & \bm{bc \,\,+\,\, d^2}
+	\end{bmatrix}
+	\)
+	=
+	\(
+	\begin{bmatrix}
+		\bm{1} & \bm{0} \\
+		\bm{0} & \bm{1}
+	\end{bmatrix}
+	\)
+	\item 
+	\(
+	\begin{cases}
+		\bm{a^2 \,\,+\,\, bc \,\,=\,\, 1} \\
+		\bm{b \left( a \,\,+\,\, d \right) \,\,=\,\, 0} \\
+		\bm{c \left( a \,\,+\,\, d \right) \,\,=\,\, 0} \\
+		\bm{bc \,\,+\,\, d^2 \,\,=\,\, 1}
+	\end{cases}
+	\)
+	\begin{itemize}
+		\item \truonghop \textbf{1.} Xét $\ds \bm{a \,\,+\,\, d} \neq \bm{0}$, khi đó $\ds \bm{b \,\,=\,\, c \,\,=\,\, 0}$
+		\[
+		\begin{cases}
+			\bm{a^2 \,\,=\,\, 1} \\
+			\bm{d^2 \,\,=\,\, 1}
+		\end{cases}
+		\Rightarrow
+		\begin{cases}
+			\bm{a \,\,=\,\, \pm 1} \\
+			\bm{d \,\,=\,\, \pm 1}
+		\end{cases}
+		\]
+		Vậy ma trận $\ds \bm{A \,\,=}$
+		\(
+		\begin{bmatrix}
+			\bm{\pm 1} & \bm{0} \\
+			\bm{0} & \bm{\pm 1}
+		\end{bmatrix}
+		\)
+		\item \truonghop \textbf{2.} Xét $\ds \bm{a \,\,+\,\, d} = \bm{0}$, khi đó $\ds \bm{a \,\,=\,\, -d}$ \\
+		Vậy ma trận $\ds \bm{A \,\,=}$
+		\(
+		\begin{bmatrix}
+			\bm{a} & \bm{b} \\
+			\bm{c} & \bm{-a}
+		\end{bmatrix}
+		\)
+		, thỏa $\ds \bm{a^2 \,\,+\,\, bc \,\,=\,\, 1}$.
+	\end{itemize}
+\end{itemize}
+
+\baitap \textbf{2.} Tồn tại hay không một ma trận thực $\ds \bm{A}$ vuông cấp hai sao cho
+\[
+A^{2010} =
+\begin{bmatrix}
+	\bm{-2008} & \bm{2010} \\
+	\bm{0} & \bm{-2009}
+\end{bmatrix}
+\quad \text{Đề thi QG - 2009}
+\]
+
+\hdg
+
+\begin{itemize}
+	\item Giả sử tồn tại ma trận $\ds \bm{A}$ thỏa mãn yêu cầu đề bài. Đặt $\ds \bm{A^{1005} \,\,=\,\, b \,\,=}$
+	\(
+	\begin{bmatrix}
+		\bm{a} & \bm{b} \\
+		\bm{c} & \bm{d}
+	\end{bmatrix}.
+	\)
+	Ta có:
+	\[
+	B^2 =
+	\begin{bmatrix}
+		\bm{a^2 \,\,+\,\, bc} & \bm{\left( a \,\,+\,\, d \right) b} \\
+		\bm{\left( a \,\,+\,\, d \right) c} & \bm{d^2 \,\,+\,\, bc}
+	\end{bmatrix}
+	=
+	\begin{bmatrix}
+		\bm{-2008} & \bm{2010} \\
+		\bm{0} & \bm{-2009}
+	\end{bmatrix}
+	\]
+	Theo giả thuyết, ta có: $\ds \bm{\left( a \,\,+\,\, d \right) c \,\,=\,\, 0}$
+	\begin{itemize}
+		\item \truonghop \textbf{1.} Xét $\ds \bm{c \,\,=\,\, 0}$
+		\[
+		\begin{bmatrix}
+			\bm{a^2 \,\,+\,\, bc} & \bm{\left( a \,\,+\,\, d \right) b} \\
+			\bm{0} & \bm{d^2}
+		\end{bmatrix}
+		\neq
+		\begin{bmatrix}
+			\bm{-2008} & \bm{2010} \\
+			\bm{0} & \bm{-2009}
+		\end{bmatrix}
+		\]
+		\item \truonghop \textbf{2.} Xét $\ds \bm{a \,\,+\,\, d \,\,=\,\, 0}$ hay $\ds \bm{a \,\,=\,\, -d}$, khi đó $\ds \bm{a^2 \,\,+\,\, bc \,\,=\,\, d^2 \,\,=\,\, bc \,\,=\,\, \lambda}$
+		\[
+		\begin{bmatrix}
+			\bm{\lambda} & \bm{0} \\
+			\bm{0} & \bm{\lambda}
+		\end{bmatrix}
+		\neq
+		\begin{bmatrix}
+			\bm{-2008} & \bm{2010} \\
+			\bm{0} & \bm{-2009}
+		\end{bmatrix}
+		\]
+	\end{itemize}
+	Vậy không tồn tại ma trận $\ds \bm{A}$ thỏa mãn bài toán.
+\end{itemize}

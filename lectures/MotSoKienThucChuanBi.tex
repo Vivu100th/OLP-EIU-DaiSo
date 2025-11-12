@@ -1,0 +1,103 @@
+\section{Một số kiến thức chuẩn bị}\label{chap1_1}
+
+\baitoan Cho ma trận vuông là $\ds \bm{A \,= \left( a_{ij} \right)_{m \times n}}$. Tính lũy thừa $\ds \bm{A^n}$, $\ds \bm{n \in \mathbb{Z}}$.
+
+\begin{itemize}
+	\item Ký hiệu: $\ds \bm{A^n \,=\, \underbrace{A \cdot A \cdots A}_{n \text{ ma trận } A}}$ là lũy thừa cấp $\ds n$ của ma trận $\ds A$.
+	\item $\ds \bm{\left[ d1, d2, \cdots, d_m \right] \,\,=}$
+	\(
+	\begin{bmatrix}
+		\bm{d_1} & \bm{0} & \bm{\cdots} & \bm{0} \\
+		\bm{\vdots} & \bm{d_2} & \bm{\ddots} & \bm{\vdots} \\
+		\bm{\vdots} & \bm{\ddots} & \bm{\ddots} & \bm{\vdots} \\
+		\bm{0} & \bm{0} & \bm{\cdots} & \bm{d_m}
+	\end{bmatrix}
+	\)
+	là ma trận đường chéo.
+	\item Ký hiệu $\ds \bm{I_m}$ là ma trận đơn vị cấp $\ds \bm{m}$.
+	\item $\ds \bm{\left[ d, d,\cdots, d \right] \,\,=}$
+	\(
+	\begin{bmatrix}
+		\bm{d} & \bm{0} & \bm{\cdots} & \bm{0} \\
+		\bm{\vdots} & \bm{d} & \bm{\ddots} & \bm{\vdots} \\
+		\bm{\vdots} & \bm{\ddots} & \bm{\ddots} & \bm{\vdots} \\
+		\bm{0} & \bm{0} & \bm{\cdots} & \bm{d}
+	\end{bmatrix}
+	=\, \bm{d \cdot I_m}
+	\)
+	là ma trận vô hướng.
+	\item Ký hiệu $\ds \bm{O}$ là ma trận không.
+\end{itemize}
+
+\vidu \textbf{1.} Cho $\ds \bm{A \,\,\,=}$
+\(
+\begin{bmatrix}
+	\bm{2} & \bm{1} \\
+	\bm{5} & \bm{-2}
+\end{bmatrix}
+\)
+, khi đó
+
+\begin{itemize}
+	\item $\ds \bm{A^2 \,\, =}$
+	\(
+	\begin{bmatrix}
+		\bm{2} & \bm{1} \\
+		\bm{5} & \bm{-2}
+	\end{bmatrix}
+	\)
+	\(
+	\begin{bmatrix}
+		\bm{2} & \bm{1} \\
+		\bm{5} & \bm{-2}
+	\end{bmatrix}
+	\)
+	=
+	\(
+	\begin{bmatrix}
+		\bm{9} & \bm{0} \\
+		\bm{0} & \bm{9}
+	\end{bmatrix}
+	\).
+	\item $\ds \bm{A^3 \,\,=\,\, A^2 \cdot A \,\,=}$
+	\(
+	\begin{bmatrix}
+		\bm{9} & \bm{0} \\
+		\bm{0} & \bm{9}
+	\end{bmatrix}
+	\)
+	\(
+	\begin{bmatrix}
+		\bm{2} & \bm{1} \\
+		\bm{5} & \bm{-2}
+	\end{bmatrix}
+	\)
+	=
+	\(
+	\begin{bmatrix}
+		\bm{18} & \bm{9} \\
+		\bm{45} & \bm{-18}
+	\end{bmatrix}
+	\).
+\end{itemize}
+
+\vidu \textbf{2.} Cho ma trận đường chéo $\ds \bm{A \,\,=}$
+\(
+\begin{bmatrix}
+	\bm{a_{11}} & \bm{0} & \bm{\cdots} & \bm{0} \\
+	\bm{\vdots} & \bm{a_{12}} & \bm{\ddots} & \bm{\vdots} \\
+	\bm{\vdots} & \bm{\ddots} & \bm{\ddots} & \bm{\vdots} \\
+	\bm{0} & \bm{0} & \bm{\cdots} & \bm{a_{mm}}
+\end{bmatrix}
+\).
+
+Khi đó $\ds \bm{A^n \,\,=}$
+\(
+\begin{bmatrix}
+	\bm{a_{11}^n} & \bm{0} & \bm{\cdots} & \bm{0} \\
+	\bm{\vdots} & \bm{a_{12}^n} & \bm{\ddots} & \bm{\vdots} \\
+	\bm{\vdots} & \bm{\ddots} & \bm{\ddots} & \bm{\vdots} \\
+	\bm{0} & \bm{0} & \bm{\cdots} & \bm{a_{mm}^n}
+\end{bmatrix}
+\)
+, $\ds \bm{\forall n \in \mathbb{N}}$.

@@ -1,0 +1,4 @@
+\contentsline {chapter}{\numberline {1}Phương Pháp Tính Lũy Thừa Ma Trận Vuông}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Một số kiến thức chuẩn bị}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Tìm ma trận thông qua phép tính toán trực tiếp}{3}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Bài tập}{4}{subsection.1.2.1}%
